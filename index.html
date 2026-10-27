@@ -1,0 +1,690 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASCII Hornet</title>
+<meta name="description" content="Hornet em arte ASCII animada diante da Cidadela de Pharloom. Fan art de Hollow Knight: Silksong.">
+<meta name="theme-color" content="#0b0d0a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ASCII Hornet">
+<meta property="og:description" content="Hornet em arte ASCII diante da Cidadela de Pharloom. Clique para tocar o sino.">
+<!-- depois de publicar, troque por https://seu-site/og.png: WhatsApp e Facebook exigem endereço completo -->
+<meta property="og:image" content="og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  /* visual único e escuro de propósito: a cena é noturna nos dois temas */
+  :root { --bg: #0b0d0a; color-scheme: dark; }
+  html, body { margin: 0; height: 100%; background: var(--bg); overflow: hidden; }
+  canvas { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100dvh; display: block; object-fit: cover; background: var(--bg); cursor: pointer; touch-action: manipulation; }
+</style>
+</head>
+<body>
+<canvas id="view" role="img" aria-label="Hornet em arte ASCII diante da Cidadela de Pharloom: manto vermelho ao vento, agulha com fio de seda e um grande sino dourado no campanário. Clique para tocar o sino."></canvas>
+<script>
+"use strict";
+// ================================================================ ajustes
+const ROWS = 120;              // linhas da grade (o canvas é escalado pra caber na tela)
+const FONT_SIZE = 12, FPS = 30;
+const LOOP = 12;               // segundos: todo movimento fecha o ciclo nesse tempo (dá pra gravar em loop perfeito)
+const WIND = 1.0;              // vento no manto e na névoa
+const S = 0.55;                // altura da Hornet (fração da altura da tela)
+const BT = 0.17;               // quanto o campanário sobe pra ficar acima dos chifres
+const PAR = [7, 5, 3.5, 2, 0.6];   // paralaxe em colunas: céu, torres distantes, médias, próximas, torre do sino
+const M = 8;                   // margem das camadas além da tela (cobre a maior paralaxe)
+const HEAD_SRC = "data:image/png;base64,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";   // máscara da Hornet (PNG embutido; fundo liso ou transparente)
+const HEAD_Y = 0.665, HEAD_H = 0.585;  // queixo e altura da máscara, em unidades locais da Hornet
+const BG = "#0b0d0a";
+const RAMP = " .:-=+*#%@";     // do mais vazio ao mais cheio
+
+const STONE = [[0.30, 0.33, 0.29], [0.40, 0.42, 0.36], [0.50, 0.50, 0.42], [0.58, 0.56, 0.46]];  // aço oliva, por camada: longe -> perto
+const GOLD = [0.96, 0.76, 0.40], GOLD_HOT = [1.0, 0.93, 0.72], EMBER = [0.95, 0.42, 0.22], BRASS = [0.40, 0.25, 0.10];
+const RED = [0.84, 0.12, 0.14], RED_DARK = [0.30, 0.03, 0.05];
+const BONE = [0.95, 0.93, 0.88], SILK = [0.96, 0.93, 0.85], SHELL = [0.30, 0.29, 0.36], STEEL = [0.80, 0.83, 0.90];
+const PALE = [0.95, 0.92, 0.76], RAY = [0.80, 0.86, 0.66];   // luz das janelas e dos raios
+const FOG = [0.46, 0.52, 0.42], DUST = [0.72, 0.78, 0.66];
+
+// ================================================================ matemática
+const TAU = Math.PI * 2;
+const freq = (n) => TAU * n / LOOP;     // n voltas por LOOP: mantém tudo periódico
+const clamp = (x, a = 0, b = 1) => (x < a ? a : x > b ? b : x);
+const smooth = (a, b, x) => { const k = clamp((x - a) / (b - a)); return k * k * (3 - 2 * k); };
+const mix = (a, b, k) => [a[0] + (b[0] - a[0]) * k, a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
+function hash(a, b = 0) {
+  let h = Math.imul(a | 0, 0x9e3779b1) ^ Math.imul((b | 0) + 0x7f4a7c15, 0x85ebca77);
+  h ^= h >>> 15; h = Math.imul(h, 0x2c1b3c6d); h ^= h >>> 12; h = Math.imul(h, 0x297a2d39);
+  return ((h ^ (h >>> 15)) >>> 0) / 4294967296;
+}
+function noise(x, y) {
+  const xi = Math.floor(x), yi = Math.floor(y), fx = x - xi, fy = y - yi, u = fx * fx * (3 - 2 * fx), v = fy * fy * (3 - 2 * fy);
+  const a = hash(xi, yi), b = hash(xi + 1, yi), c = hash(xi, yi + 1), d = hash(xi + 1, yi + 1);
+  return a + (b - a) * u + (c - a) * v + (a - b - c + d) * u * v;
+}
+const C = (s) => s.charCodeAt(0);
+const RAMPC = [...RAMP].map(C);
+
+// ================================================================ grade
+// mundo: y vai de 0 (topo) a 1 (base), x é centrado em 0 e usa a mesma unidade que y
+const view = document.getElementById("view"), ctx = view.getContext("2d");
+const FONT = `${FONT_SIZE}px Menlo, Consolas, "DejaVu Sans Mono", "Courier New", monospace`;
+ctx.font = FONT;
+const CW = Math.max(1, Math.round(ctx.measureText("M").width)), CH = FONT_SIZE, K = CW / CH;   // K: largura da célula em alturas de linha
+const HALF = 0.5 * K / ROWS;                                          // meia coluna: largura mínima pra uma ponta aparecer
+const MASK = [];                             // máscara alfa de cada caractere: o quadro é montado pixel a pixel (fillText por célula é lento demais)
+{
+  const g = document.createElement("canvas"), gx = g.getContext("2d", { willReadFrequently: true });
+  g.width = CW; g.height = CH;
+  gx.font = FONT; gx.textBaseline = "top"; gx.fillStyle = "#fff";
+  for (let k = 32; k < 127; k++) {
+    gx.clearRect(0, 0, CW, CH); gx.fillText(String.fromCharCode(k), 0, 0);
+    const d = gx.getImageData(0, 0, CW, CH).data, m = new Uint8Array(CW * CH);
+    for (let p = 0; p < m.length; p++) m[p] = d[p * 4 + 3];
+    MASK[k] = m;
+  }
+}
+let COLS, N, A, LR, FY, LW, LN;
+let lum, rgb, gl, emis, lay, hm;   // quadro atual; gl: caractere forçado (0 = pela rampa, 32 = vazio); lay: camada que pintou a célula
+let L, wins, ledge, threads, motes, walkers, HEAD = null;
+let RAYS, rayI, rayF, rayW = 0;    // raios de luz: dois jogos de faixas diagonais, misturados ao longo do ciclo
+const sh = [0, 0, 0, 0, 0];        // deslocamento de cada camada neste quadro (colunas)
+const colOf = (x) => Math.floor((x + A / 2) * ROWS / K);
+const rowOf = (y) => Math.floor(y * ROWS);
+const wxOf = (c) => (c + 0.5) * K / ROWS - A / 2;
+const wyOf = (r) => (r + 0.5) / ROWS;
+const lcol = (x) => colOf(x) + M, lwx = (cl) => wxOf(cl - M);       // colunas das camadas (com margem)
+function put(i, l, col, ch = 0, e = 0) { lum[i] = l; rgb[i * 3] = col[0]; rgb[i * 3 + 1] = col[1]; rgb[i * 3 + 2] = col[2]; gl[i] = ch; emis[i] = e; }
+const blank = (i) => put(i, 0, BRASS, 32);
+function lput(k, j, l, col, ch = 0, e = 0) {
+  const B = L[k];
+  B.lum[j] = l; B.rgb[j * 3] = col[0]; B.rgb[j * 3 + 1] = col[1]; B.rgb[j * 3 + 2] = col[2]; B.gl[j] = ch; B.emis[j] = e; B.has[j] = 1;
+}
+
+function dirGlyph(dx, dy) {                 // direção no mundo (y pra baixo) -> - | / \
+  const cx = Math.abs(dx / K), cy = Math.abs(dy);
+  if (cx > cy * 2.2) return C("-");
+  if (cy > cx * 2.2) return C("|");
+  return dx * dy > 0 ? C("\\") : C("/");
+}
+console.assert(dirGlyph(1, 0) === C("-") && dirGlyph(0, 1) === C("|") && dirGlyph(K, 1) === C("\\") && dirGlyph(K, -1) === C("/"), "dirGlyph");
+
+function line(x0, y0, x1, y1, fn, W = COLS, off = 0) {   // traço de 1 célula, passo de meia célula; W/off: grade da tela ou de uma camada
+  const c0 = (x0 + A / 2) * ROWS / K, r0 = y0 * ROWS, c1 = (x1 + A / 2) * ROWS / K, r1 = y1 * ROWS;
+  const n = Math.max(1, Math.ceil(Math.max(Math.abs(c1 - c0), Math.abs(r1 - r0)) * 2)), g = dirGlyph(x1 - x0, y1 - y0);
+  for (let k = 0; k <= n; k++) {
+    const c = Math.floor(c0 + (c1 - c0) * k / n) + off, r = Math.floor(r0 + (r1 - r0) * k / n);
+    if (c >= 0 && c < W && r >= 0 && r < ROWS) fn(r * W + c, k / n, g);
+  }
+}
+
+// ================================================================ cidadela (estática, em 5 camadas pra paralaxe)
+const pinnacle = (ax, y, px, base, h) => { const s = (base - y) / h; return s >= 0 && s <= 1 && Math.abs(ax - px) <= Math.max(HALF, 0.014 * (1 - s)); };
+function centerTower(x, y) {                 // torre do sino: corpo com rosácea, campanário em arco e flecha
+  const ax = Math.abs(x);
+  y += BT;
+  if (y >= 0.36) return ax <= 0.155 || (y < 0.372 && ax <= 0.167);
+  if (pinnacle(ax, y, 0.145, 0.36, 0.08) || pinnacle(ax, y, 0.085, 0.17, 0.07)) return true;
+  if (y >= 0.17) {
+    if (ax > (y < 0.182 ? 0.097 : 0.085)) return false;
+    return !(ax < 0.065 && y < 0.35 && y > 0.265 - Math.sqrt(Math.max(0, 0.065 * 0.065 - ax * ax)));
+  }
+  return ax <= Math.max(0.097 * (1 - (0.17 - y) / 0.15), y > 0.005 ? HALF : -1);
+}
+
+function city() {
+  // camada 0 = céu; 1..3 = longe, meio, perto; 4 = torre do sino
+  L = Array.from({ length: 5 }, () => ({ lum: new Float32Array(LN), rgb: new Float32Array(LN * 3), gl: new Int16Array(LN), emis: new Float32Array(LN), has: new Uint8Array(LN) }));
+  const owner = Array.from({ length: 4 }, () => new Int16Array(LN)), colors = [null];
+  let seed = 1, nextId = 1;
+  const rand = () => hash(seed++, 77), half = A / 2 + M * K / ROWS;
+  const tone = (d, col) => mix(col, FOG, [0.45, 0.22, 0.06, 0][d]);      // quanto mais longe, mais some na névoa
+  const FADE = [0.6, 0.8, 1, 1];
+  const paint = (d, col, x0, x1, inside) => {                             // silhueta: o contorno sai sozinho na passada de bordas
+    const id = nextId++, O = owner[d];
+    colors[id] = col;
+    for (let r = 0; r < ROWS; r++) for (let cl = Math.max(0, lcol(x0) - 1); cl <= Math.min(LW - 1, lcol(x1) + 1); cl++)
+      if (inside(lwx(cl), wyOf(r))) O[r * LW + cl] = id;
+    return id;
+  };
+  const lit = (k, j, l, col, ch, e, ph) => { lput(k, j, l, col, ch, e); wins.push({ k, j, l, e, ph, n: 1 + ((ph * 7) | 0) % 6 }); };
+
+  // colunas colossais ao fundo, travadas em X
+  const pillars = [];
+  for (let x = -half + 0.06 * rand(); x < half; x += 0.13 + 0.14 * rand()) pillars.push({ x, w: 0.012 + 0.018 * rand() });
+  for (let k = 1; k < pillars.length; k++) {
+    const P = pillars[k - 1], Q = pillars[k], ya = 0.08 + 0.4 * rand(), yb = ya + 0.1 + 0.12 * rand(), dx = Q.x - P.x;
+    for (const [y0, y1] of [[ya, yb], [yb, ya]]) {
+      const dy = y1 - y0, len2 = dx * dx + dy * dy;
+      paint(0, STONE[0], P.x, Q.x, (x, y) => { const s = clamp(((x - P.x) * dx + (y - y0) * dy) / len2); return Math.hypot(x - P.x - dx * s, y - y0 - dy * s) < 0.006; });
+    }
+  }
+  for (const P of pillars) P.id = paint(0, STONE[0], P.x - P.w, P.x + P.w, (x) => Math.abs(x - P.x) <= P.w);
+
+  // cachos de casas-lustre penduradas em hastes; quanto mais perto, maiores e mais espaçadas
+  const SIZE = [[0.010, 0.018], [0.016, 0.030], [0.026, 0.046]], GAP = [0.16, 0.24, 0.34], pods = [[], [], []], stems = [];
+  for (let d = 0; d < 3; d++) for (let x = -half + GAP[d] * rand(); x < half; x += GAP[d] * (0.7 + 0.6 * rand())) {
+    if (d === 2 && Math.abs(x) < 0.27) continue;                            // perto: centro livre pra Hornet
+    if (d) { paint(d, STONE[d], x - 0.01, x + 0.01, (px) => Math.abs(px - x) <= 0.004 + 0.003 * d); stems.push({ d, x }); }
+    for (let k = 3 + ((rand() * 4) | 0); k > 0; k--) {
+      const px = x + (rand() - 0.5) * GAP[d] * 0.8, top = 0.1 + 0.55 * rand(), w = SIZE[d][0] + (SIZE[d][1] - SIZE[d][0]) * rand(), tall = rand() < 0.2, ph = rand();
+      if (d < 2 || Math.abs(px) > 0.22) pods[d].push({ x: px, top, w, tall, ph });
+    }
+  }
+
+  const CID = nextId++;                                                    // torre do sino
+  colors[CID] = STONE[3];
+  for (let r = 0; r < ROWS; r++) for (let cl = Math.max(0, lcol(-0.18)); cl <= Math.min(LW - 1, lcol(0.18)); cl++)
+    if (centerTower(lwx(cl), wyOf(r))) owner[3][r * LW + cl] = CID;
+
+  const HW = Math.min(0.12, A * 0.07), HX = half - HW * 0.6;               // torre-colmeia na borda direita
+  const HID = paint(2, STONE[2], HX - HW, HX + HW, (x, y) => Math.abs(x - HX) <= HW * Math.sqrt(Math.max(0, 1 - Math.min(0, (y - 0.5) / 0.45) ** 2)));
+
+  for (let r = 0; r < ROWS; r++) for (let cl = 0; cl < LW; cl++) {        // céu: poeira e um brilho pálido atrás da cidade
+    const j = r * LW + cl, x = lwx(cl), y = wyOf(r), h = hash(cl, r + 5000), glow = Math.exp(-((x / 0.45) ** 2) - ((y - 0.5) / 0.3) ** 2);
+    if (h < 0.0035) lput(0, j, 0.2 + 0.3 * hash(cl, r + 9000), DUST, C("."), 0.2);
+    else if (h < 0.004 + glow * 0.12) lput(0, j, 0.12 + 0.1 * glow, DUST, C("."));
+  }
+  const BODY = [0.10, 0.13, 0.16, 0.19], EDGE = [0.22, 0.32, 0.42, 0.52], RIM = [0.1, 0.2, 0.3, 0.45];
+  for (let d = 0; d < 4; d++) {
+    const O = owner[d];
+    for (let r = 0; r < ROWS; r++) for (let cl = 0; cl < LW; cl++) {
+      const j = r * LW + cl, id = O[j];
+      if (!id) continue;
+      // contorno: borda onde o vizinho não é esta peça; a direção da borda escolhe o caractere
+      const m = (q) => (O[q] === id ? 1 : 0), y = wyOf(r);
+      const gx = (cl < LW - 1 ? m(j + 1) : 1) - (cl > 0 ? m(j - 1) : 1);
+      const gy = (r < ROWS - 1 ? m(j + LW) : 1) - (r > 0 ? m(j - LW) : 1);
+      const fade = 1 - 0.5 * smooth(0.6, 0.95, y), col = tone(d, colors[id]);
+      if (gx || gy) lput(d + 1, j, EDGE[d] * fade, mix(col, GOLD, RIM[d]), C(gx && gy ? (gx * gy > 0 ? "/" : "\\") : gx ? "|" : gy > 0 ? "_" : "-"));
+      else lput(d + 1, j, BODY[d] * (0.65 + 0.7 * hash(cl, r)) * fade, col);
+    }
+  }
+
+  for (let r = 1; r < ROWS - 1; r++) for (let cl = 1; cl < LW - 1; cl++) {  // colmeia: favos de luz no miolo da torre
+    const j = r * LW + cl, O = owner[2];
+    if (O[j] !== HID || O[j - 1] !== HID || O[j + 1] !== HID || O[j - LW] !== HID || O[j + LW] !== HID) continue;
+    const u = clamp((lwx(cl) - HX) / HW, -1, 1), shade = (0.55 + 0.45 * Math.cos(u * Math.PI / 2)) * (1 - 0.5 * smooth(0.6, 0.95, wyOf(r)));
+    const ch = ["/ \\_", "\\_/ "][r & 1][cl & 3];
+    if (ch !== " ") lput(3, j, 0.36 * shade, tone(2, mix(STONE[2], GOLD, 0.4)), C(ch));
+    else if (hash(cl, r + 21) < 0.45) lit(3, j, 0.5 * shade, tone(2, PALE), C("o"), 0.35 * shade, hash(cl, r));
+    else lput(3, j, 0.2 * shade, tone(2, PALE), C("o"));
+  }
+
+  const curl = (d, x, w, y0) => {                                          // fitas douradas que sobem ondulando ao lado da coluna
+    for (const side of [-1, 1]) {
+      let px = x + side * w, py = y0;
+      for (let s = 1; s <= 20; s++) {
+        const u = s / 20, nx = x + side * (w + 0.022 * (1 - Math.cos(TAU * u)) + 0.01 * u), ny = y0 - 0.12 * u + 0.012 * Math.sin(TAU * u * 1.5);
+        line(px, py, nx, ny, (j, a, g) => lput(d + 1, j, 0.45 * FADE[d], tone(d, GOLD), g, 0.15), LW, M);
+        px = nx; py = ny;
+      }
+    }
+  };
+  for (const P of pillars) {
+    for (let y = 0.05 + 0.1 * rand(); y < 0.95; y += 0.16 + 0.1 * rand())   // anéis dourados
+      for (let cl = Math.max(0, lcol(P.x - P.w)); cl <= Math.min(LW - 1, lcol(P.x + P.w)); cl++) {
+        const j = rowOf(y) * LW + cl;
+        if (owner[0][j] === P.id) lput(1, j, 0.3, tone(0, GOLD), C("="));
+      }
+    if (rand() < 0.6) curl(0, P.x, P.w, 0.12 + 0.3 * rand());
+  }
+  for (const T of stems) if (T.d === 1 && rand() < 0.4) curl(1, T.x, 0.006, 0.15 + 0.3 * rand());
+
+  walkers = [];
+  const bridge = (d, x0, x1, y) => {                                       // ponte com treliça; um peregrino vai e volta nela
+    const k = d + 1, r0 = rowOf(y), trim = tone(d, GOLD);
+    for (let cl = Math.max(0, lcol(x0)); cl <= Math.min(LW - 1, lcol(x1)); cl++) {
+      const p = cl % 8;
+      [["=", 0.45], [cl & 1 ? "\\" : "/", 0.32], ["=", 0.4], [p === 7 ? "\\" : p === 0 ? "|" : p === 1 ? "/" : "", 0.3]]
+        .forEach(([ch, l], dr) => { if (ch) lput(k, (r0 + dr) * LW + cl, l * FADE[d], trim, C(ch)); });
+    }
+    walkers.push({ k, x: (x0 + x1) / 2, half: (x1 - x0) * 0.4, y, n: rand() < 0.5 ? 1 : 2, ph: rand() * TAU });
+  };
+  bridge(1, -half, -0.15, 0.5);
+  if (pillars.length > 3) bridge(0, pillars[pillars.length - 3].x, pillars[pillars.length - 2].x, 0.34);
+
+  const pod = (d, P) => {                                                   // casa-lustre: cúpula com espinhos, tambor de janelas em arco, franja de pingentes
+    const k = d + 1, f = FADE[d], { x: cx, top, w, tall, ph } = P, cc = lcol(cx);
+    const dh = 0.55 * w, d0 = top + dh, d1 = d0 + 1.2 * w, d2 = d1 + 0.3 * w, rd0 = rowOf(d0);
+    const trim = tone(d, GOLD), body = tone(d, STONE[d]), pale = tone(d, PALE);
+    const pp = (cl, r, l, col, ch, e = 0) => { if (cl >= 0 && cl < LW && r >= 0 && r < ROWS) lput(k, r * LW + cl, l * f, col, C(ch), e * f); };
+    const sp = tall ? 0.08 + 0.1 * hash(cc, 3) : 0.012 + 0.02 * hash(cc, 4);
+    for (let r = rowOf(top - sp); r < rowOf(top); r++) pp(cc, r, 0.5, trim, r === rowOf(top - sp) ? "^" : "|", 0.1);
+    for (let r = rowOf(top); r <= rowOf(d2); r++) {
+      const y = wyOf(r), hw = y < d0 ? w * 0.95 * Math.sqrt(Math.max(0, 1 - ((d0 - y) / dh) ** 2)) : y < d1 ? w : w * (1 - 0.35 * clamp((y - d1) / (0.3 * w)));
+      const a = lcol(cx - hw), b = lcol(cx + hw), rim = r === rd0 || wyOf(r + 1) >= d1;
+      for (let cl = a; cl <= b; cl++) {
+        const rel = cl - cc, edge = cl === a || cl === b;
+        if (y < d0) pp(cl, r, edge ? 0.42 : rel % 3 ? 0.17 : 0.3, edge || !(rel % 3) ? trim : body, a === b ? "^" : cl === a ? "/" : cl === b ? "\\" : rel % 3 ? ":" : "|");
+        else if (y < d1) {
+          if (edge) pp(cl, r, 0.4, trim, "|");
+          else if (rim) pp(cl, r, 0.45, trim, "=");
+          else if (rel & 1) pp(cl, r, 0.22, trim, ":");                     // montante entre janelas
+          else if (cl >= 0 && cl < LW) {
+            const u = (lwx(cl) - cx) / w, side = 1 - u * u;                 // o tambor é redondo: janelas da borda mais escuras
+            lit(k, r * LW + cl, (0.5 + 0.42 * side) * f, pale, C(r === rd0 + 1 ? "n" : "H"), 0.8 * side * f, ph);
+          }
+        } else pp(cl, r, edge ? 0.3 : 0.15, edge ? trim : body, cl === a ? "\\" : cl === b ? "/" : ":");
+      }
+    }
+    if (w > 0.014) for (const su of [-0.75, -0.4, 0.4, 0.75])               // espinhos na cúpula
+      pp(lcol(cx + su * w), rowOf(d0 - dh * Math.sqrt(1 - (su / 0.95) ** 2)) - 1, 0.55, pale, "'", 0.2);
+    const rb = rowOf(d2);
+    for (let cl = lcol(cx - 0.65 * w); cl <= lcol(cx + 0.65 * w); cl++) {   // pingentes, mais compridos no meio
+      const h = hash(cl, rb * 7 + k);
+      if (h < 0.3) continue;
+      const len = 1 + ((h * 50) | 0) % 4 + (Math.abs(cl - cc) < 2 ? 2 : 0);
+      for (let s = 1; s <= len; s++) pp(cl, rb + s, 0.5 - 0.25 * s / len, mix(pale, trim, 0.4), s === len ? "'" : "|", 0.08);
+    }
+  };
+  pods.forEach((list, d) => list.sort((a, b) => a.top - b.top).forEach((P) => pod(d, P)));   // as de baixo ficam na frente
+
+  const RY = FY - 0.86 * S, RR = 0.135;                                    // rosácea: auréola atrás da cabeça
+  for (let r = rowOf(RY - RR); r <= rowOf(RY + RR); r++) for (let cl = lcol(-RR); cl <= lcol(RR); cl++) {
+    const j = r * LW + cl, x = lwx(cl), y = wyOf(r) - RY, q = Math.hypot(x, y) / RR;
+    if (q > 1) continue;
+    const a = Math.atan2(y, x) / TAU * 12, seg = (Math.floor(a) + 12) % 12 + (q > 0.55 ? 12 : 0);
+    if (q > 0.86) lput(4, j, 0.55, mix(STONE[3], GOLD, 0.55), dirGlyph(-y, x));
+    else if (q < 0.15) lit(4, j, 0.9, GOLD_HOT, 0, 1, 0.5);
+    else if (Math.abs(a - Math.floor(a) - 0.5) > 0.38 || Math.abs(q - 0.55) < 0.07) lput(4, j, 0.26, mix(STONE[3], GOLD, 0.3));
+    else lit(4, j, 0.42 + 0.3 * (1 - q), hash(seg, 8) < 0.25 ? EMBER : GOLD, 0, 0.5, hash(seg, 9) * 3);
+  }
+}
+
+// máscara da Hornet a partir da imagem: recorta o desenho e amostra no dobro da resolução da grade.
+// O fundo sai por inundação a partir das bordas: o branco do rosto é igual ao do fundo, mas fica cercado pelo contorno.
+function sampleHead(img) {
+  const w = img.naturalWidth, h = img.naturalHeight, cv = document.createElement("canvas"), cx = cv.getContext("2d", { willReadFrequently: true });
+  cv.width = w; cv.height = h;
+  cx.drawImage(img, 0, 0);
+  const px = cx.getImageData(0, 0, w, h).data, bg = [px[0], px[1], px[2]], bgOpaque = px[3] >= 128;
+  const isBg = (d, k) => d[k + 3] < 128 || (bgOpaque && Math.abs(d[k] - bg[0]) + Math.abs(d[k + 1] - bg[1]) + Math.abs(d[k + 2] - bg[2]) < 60);
+  let x0 = w, x1 = 0, y0 = h, y1 = 0;
+  for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (!isBg(px, (y * w + x) * 4)) { x0 = Math.min(x0, x); x1 = Math.max(x1, x); y0 = Math.min(y0, y); y1 = Math.max(y1, y); }
+  const gh = Math.round(HEAD_H * S * ROWS * 2), gw = Math.round(gh * (x1 - x0 + 1) / (y1 - y0 + 1) / K), W2 = gw + 2;
+  cv.width = W2; cv.height = gh + 2;                                       // 1 px transparente em volta: a inundação contorna o desenho
+  cx.drawImage(img, x0, y0, x1 - x0 + 1, y1 - y0 + 1, 1, 1, gw, gh);
+  const g = cx.getImageData(0, 0, W2, gh + 2).data, out = new Uint8Array(W2 * (gh + 2)), stack = [0];   // out: 1 = fundo
+  out[0] = 1;
+  while (stack.length) {
+    const p = stack.pop(), x = p % W2, y = (p / W2) | 0;
+    for (const q of [x > 0 ? p - 1 : -1, x < W2 - 1 ? p + 1 : -1, y > 0 ? p - W2 : -1, y <= gh ? p + W2 : -1])
+      if (q >= 0 && !out[q] && isBg(g, q * 4)) { out[q] = 1; stack.push(q); }
+  }
+  const head = { gw, gh, lum: new Float32Array(gw * gh), inside: new Uint8Array(gw * gh) };
+  for (let y = 0; y < gh; y++) for (let x = 0; x < gw; x++) {
+    const p = (y + 1) * W2 + x + 1, k = y * gw + x;
+    head.inside[k] = out[p] ? 0 : 1;
+    head.lum[k] = (0.3 * g[p * 4] + 0.59 * g[p * 4 + 1] + 0.11 * g[p * 4 + 2]) / 255;
+  }
+  return head;
+}
+
+// ================================================================ montagem
+function build() {
+  COLS = Math.max(60, Math.round(ROWS / K * innerWidth / Math.max(1, innerHeight)));
+  N = COLS * ROWS; A = COLS * K / ROWS; LW = COLS + 2 * M; LN = LW * ROWS;
+  LR = Math.round(ROWS * 0.905); FY = LR / ROWS;                           // linha do parapeito onde a Hornet pisa
+  view.width = COLS * CW; view.height = ROWS * CH;
+  ascii = document.createElement("canvas"); ascii.width = view.width; ascii.height = view.height;
+  actx = ascii.getContext("2d"); frameImg = actx.createImageData(view.width, view.height); px32 = new Uint32Array(frameImg.data.buffer);
+  lum = new Float32Array(N); rgb = new Float32Array(N * 3); gl = new Int16Array(N); emis = new Float32Array(N); lay = new Int8Array(N); hm = new Uint8Array(N);
+  wins = [];
+  city();
+
+  let rs = 900;
+  const rr = () => hash(rs++, 5);
+  RAYS = [0, 1].map(() => {                                                // faixas suaves vindas do alto à esquerda
+    const T = new Float32Array(512);
+    for (let b = 0; b < 6; b++) { const c = 512 * rr(), wd = 8 + 26 * rr(), a = 0.4 + 0.6 * rr(); for (let i = 0; i < 512; i++) T[i] += a * Math.exp(-(((i - c) / wd) ** 2)); }
+    return T;
+  });
+  rayI = new Int16Array(N); rayF = new Float32Array(N);
+  for (let r = 0; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+    const i = r * COLS + c, y = wyOf(r);
+    rayI[i] = clamp((wxOf(c) - 0.7 * y + A / 2 + 0.7) / (A + 0.7)) * 511 | 0;
+    rayF[i] = 0.24 * (1 - 0.7 * y);
+  }
+
+  ledge = [];                                                              // primeiro plano: cúpulas escuras e o parapeito por cima
+  let fs = 700;
+  const fr = () => hash(fs++, 9);
+  for (const side of [-1, 1]) for (let k = 0; k < 2; k++) {                // cúpulas com nervuras douradas e espinho de prata
+    const cx = side * (0.3 + 0.24 * k + 0.05 * fr()), w = 0.07 + 0.03 * fr(), top = 0.8 + 0.03 * fr(), sp = 0.05 + 0.03 * fr();
+    if (Math.abs(cx) > A / 2 + w) continue;
+    for (let r = rowOf(top - sp); r < LR; r++) {
+      const y = wyOf(r);
+      if (y < top) {
+        const c = colOf(cx);
+        if (c >= 0 && c < COLS) ledge.push({ i: r * COLS + c, l: 0.6, ch: C(r === rowOf(top - sp) ? "^" : "|"), col: SILK, e: 0.3 });
+        continue;
+      }
+      const hw = w * Math.sqrt(clamp((y - top) / (FY - top) * 1.6)), a = colOf(cx - hw), b = colOf(cx + hw);
+      for (let c = Math.max(0, a); c <= Math.min(COLS - 1, b); c++) {
+        const u = (wxOf(c) - cx) / Math.max(hw, 1e-6), rib = Math.abs(u * 3 - Math.round(u * 3)) < 0.18, edge = c === a || c === b;
+        ledge.push({ i: r * COLS + c, l: edge ? 0.32 : rib ? 0.22 : 0.12, ch: C(c === a ? "/" : c === b ? "\\" : rib ? (u < -0.1 ? "(" : u > 0.1 ? ")" : "|") : "."), col: edge || rib ? mix(STONE[3], GOLD, 0.55) : STONE[3] });
+      }
+    }
+  }
+  const BAL = ["\\=/", "(:)", "|:|", "/_\\"];
+  for (let r = LR; r < ROWS; r++) for (let c = 0; c < COLS; c++) {
+    const k = r - LR, p = c % 7;
+    let ch, l;
+    if (k === 0) { ch = "="; l = 0.5; }
+    else if (k === 1) { ch = "-"; l = 0.28; }
+    else if (k < 6) { if (p < 2 || p > 4) continue; ch = BAL[k - 2][p - 2]; l = 0.36; }
+    else if (k === 6) { ch = "="; l = 0.42; }
+    else { ch = (c + (k & 1) * 4) % 8 === 0 ? "|" : hash(c, r + 77) < 0.5 ? "." : ":"; l = 0.18; }
+    ledge.push({ i: r * COLS + c, l, ch: C(ch), col: mix(STONE[3], GOLD, k === 0 ? 0.3 : 0.1) });
+  }
+
+  let seed = 500;
+  const rnd = () => hash(seed++, 3);
+  threads = [];                                                            // fios de seda pendurados do alto, metade com lanterna-gaiola
+  for (let k = 0, n = Math.round(A * 4); k < n; k++) {
+    const x0 = (rnd() - 0.5) * A, len = 0.10 + 0.35 * rnd(), ph = rnd() * TAU, amp = 0.004 + 0.008 * rnd(), cage = rnd() < 0.5;
+    if (Math.abs(x0) > 0.15) threads.push({ x0, len, ph, amp, cage });
+  }
+  motes = Array.from({ length: Math.round(COLS * 0.2) }, () => ({
+    x0: (rnd() - 0.5) * A, y0: 0.35 + 0.7 * rnd(), rise: 0.1 + 0.25 * rnd(), n: 2 + ((rnd() * 3) | 0), off: rnd(), ph: rnd() * TAU, amp: 0.005 + 0.02 * rnd() }));
+
+  g1 = document.createElement("canvas"); g2 = document.createElement("canvas");
+  g1.width = g2.width = COLS; g1.height = g2.height = ROWS;
+  g1x = g1.getContext("2d"); g2x = g2.getContext("2d"); g2x.filter = "blur(1.6px)";   // sem suporte a filter (Safari) o brilho só fica mais curto
+  glowImg = g1x.createImageData(COLS, ROWS);
+}
+let g1, g1x, g2, g2x, glowImg, ascii, actx, frameImg, px32;
+
+// ================================================================ partes animadas
+let lastT = 0, hitT = -1, par = 0, parT = 0;
+const ringAge = (t) => (hitT >= 0 && t >= hitT ? t - hitT : -1);   // segundos desde a última badalada (-1 = nenhuma)
+
+function bell(t) {                           // sino preso no topo do arco; a badalada dá um tranco que vai amortecendo
+  const age = ringAge(t), sx = sh[4] * K / ROWS;
+  const th = 0.07 * Math.sin(freq(2) * t) + (age >= 0 ? 0.3 * Math.exp(-age * 0.9) * Math.sin(age * 5.5) : 0);
+  const cs = Math.cos(th), sn = Math.sin(th), PY = 0.205 - BT;
+  for (let r = Math.max(0, rowOf(0.198 - BT)); r <= rowOf(0.345 - BT); r++) for (let c = Math.max(0, colOf(-0.11 - sx)); c <= Math.min(COLS - 1, colOf(0.11 - sx)); c++) {
+    const i = r * COLS + c, dx = wxOf(c) + sx, dy = wyOf(r) - PY, bx = dx * cs + dy * sn, by = dy * cs - dx * sn;
+    if (by < -0.006) continue;
+    if (by < 0.012) { if (Math.abs(bx) < 0.008) put(i, 0.45, mix(BRASS, GOLD, 0.5)); continue; }
+    const u = (by - 0.012) / 0.103;
+    if (u > 1) { if (u < 1.15 && Math.abs(bx) < 0.008) put(i, 0.5, GOLD, C("o"), 0.3); continue; }
+    const w = 0.026 * Math.sqrt(Math.min(1, u * 6)) + 0.006 * u + 0.026 * u * u * u;   // ombro redondo, cintura, boca aberta
+    if (Math.abs(bx) > w) continue;
+    const light = Math.cos(clamp((bx / w + 0.35) * 1.4, -1.57, 1.57)), band = Math.abs(u - 0.3) < 0.035 || Math.abs(u - 0.8) < 0.035;
+    put(i, (0.2 + 0.6 * light) * (band ? 0.6 : 1) + (u > 0.94 ? 0.15 : 0), mix(BRASS, GOLD, light), band ? C("=") : 0, 0.35 * light * light);
+  }
+}
+
+function waves(t) {                          // ondas de som: círculos que saem do sino
+  const age = ringAge(t);
+  if (age < 0 || age > 5) return;
+  const cx = -sh[4] * K / ROWS, cy = 0.205 - BT + 0.08;
+  for (let k = 0; k < 3; k++) {
+    const rr = (age - k * 0.3) * 0.5, l = 0.55 * Math.exp(-age * 0.7) * (1 - rr / 1.2);
+    if (rr < 0.09 || rr > 1.2 || l < 0.1) continue;
+    const n = Math.ceil(TAU * rr * ROWS / K * 1.5);
+    for (let s = 0; s < n; s++) {
+      const a = TAU * s / n, ca = Math.cos(a), sa = Math.sin(a), c = colOf(cx + rr * ca), r = rowOf(cy + rr * sa);
+      if (c < 0 || c >= COLS || r < 0 || r >= ROWS) continue;
+      put(r * COLS + c, l, GOLD, Math.abs(ca) > 0.75 ? C(ca < 0 ? "(" : ")") : dirGlyph(-sa, ca), l * 0.8);
+    }
+  }
+}
+
+function burst(t) {                          // fagulhas que espirram do sino e sobem
+  const age = ringAge(t);
+  if (age < 0 || age > 4) return;
+  const cx = -sh[4] * K / ROWS, cy = 0.205 - BT + 0.1;
+  for (let k = 0; k < 40; k++) {
+    const a = TAU * hash(k, 41), d = (0.12 + 0.3 * hash(k, 42)) * (1 - Math.exp(-age * 1.6));
+    const c = colOf(cx + Math.cos(a) * d), r = rowOf(cy + Math.sin(a) * d * 0.7 - 0.03 * age);
+    if (c < 0 || c >= COLS || r < 0 || r >= ROWS) continue;
+    const i = r * COLS + c, l = 0.85 * Math.exp(-age * 0.9) * (0.6 + 0.4 * Math.sin(age * 8 + k) ** 2);
+    if (l > 0.12 && lum[i] < 0.3) put(i, l, GOLD, C(l > 0.55 ? "*" : l > 0.35 ? "+" : "."), l);
+  }
+}
+
+function walk(t) {                           // peregrinos indo e voltando nas pontes
+  for (const P of walkers) {
+    const c = colOf(P.x + P.half * Math.sin(freq(P.n) * t + P.ph) - sh[P.k] * K / ROWS), r = rowOf(P.y);
+    if (c < 0 || c >= COLS) continue;
+    for (const [dr, ch, l] of [[0, "A", 0.42], [-1, "n", 0.36]]) {        // manto e capuz
+      const i = (r + dr) * COLS + c;
+      if (r + dr >= 0 && lay[i] <= P.k) put(i, l, mix(STONE[P.k - 1], GOLD, 0.35), C(ch));
+    }
+  }
+}
+
+function fog(t) {
+  // duas amostras de ruído defasadas em LOOP, misturadas: a névoa anda sem emenda quando o ciclo recomeça
+  const tau = ((t % LOOP) + LOOP) % LOOP, wgt = tau / LOOP, sx = sh[2] * K / ROWS;
+  const field = (x, y, tt) => 0.65 * noise(x * 7 - tt * 0.05 * WIND, y * 16) + 0.35 * noise(x * 19 - tt * 0.12 * WIND, y * 38 + tt * 0.05);
+  for (let r = rowOf(0.6); r < ROWS; r++) {
+    const y = wyOf(r), band = smooth(0.6, 0.9, y);
+    for (let c = 0; c < COLS; c++) {
+      const x = wxOf(c) + sx, d = band * smooth(0.38, 0.8, field(x, y, tau) * (1 - wgt) + field(x, y, tau - LOOP) * wgt);
+      if (d < 0.03) continue;
+      const i = r * COLS + c, fl = 0.42 * d;
+      if (fl > lum[i] * (1 - d)) put(i, fl, FOG, C(fl < 0.1 ? "." : fl < 0.2 ? "-" : "~"));
+      else lum[i] *= 1 - 0.45 * d;
+    }
+  }
+}
+
+const CAGE = ["/^\\", "|*|", "\\_/"];
+function silk(t) {
+  const sx = sh[2] * K / ROWS;
+  for (const T of threads) {
+    let px = T.x0 - sx, py = 0;
+    for (let k = 1; k <= 24; k++) {
+      const s = k / 24, x = T.x0 - sx + T.amp * Math.sin(freq(2) * t + T.ph) * s * s, y = T.len * s;
+      line(px, py, x, y, (i, a, g) => put(i, 0.16 + 0.14 * s, SILK, g, 0.05));
+      px = x; py = y;
+    }
+    const c = colOf(px), r = rowOf(py) + 1;
+    if (!T.cage) { if (c >= 0 && c < COLS && r < ROWS) put(r * COLS + c, 0.6, GOLD, C("o"), 0.7); continue; }
+    const f = 0.85 + 0.15 * Math.sin(freq(5) * t + T.ph);                // lanterna-gaiola
+    for (let dr = 0; dr < 3; dr++) for (let dc = 0; dc < 3; dc++) {
+      const cc = c - 1 + dc, rr = r + dr, ch = CAGE[dr][dc], core = ch === "*";
+      if (cc >= 0 && cc < COLS && rr < ROWS) put(rr * COLS + cc, (core ? 0.8 : 0.4) * f, core ? GOLD_HOT : mix(SILK, GOLD, 0.5), C(ch), core ? 0.9 * f : 0.15);
+    }
+  }
+}
+
+function drift(t) {                          // fagulhas douradas: nascem, sobem um pouco e somem
+  for (const P of motes) {
+    const p = ((t / LOOP) * P.n + P.off) % 1, y = P.y0 - P.rise * p, x = P.x0 + P.amp * Math.sin(freq(1) * t + P.ph) + 0.03 * WIND * p;
+    const c = colOf(x), r = rowOf(y), l = (0.3 + 0.45 * Math.sin(freq(3) * t + P.ph) ** 2) * Math.sin(Math.PI * p);
+    if (c < 0 || c >= COLS || r < 0 || r >= ROWS || l < 0.12) continue;
+    const i = r * COLS + c;
+    if (lum[i] < 0.18) put(i, l, GOLD, C(l > 0.6 ? "*" : l > 0.42 ? "+" : "."), l);
+  }
+}
+
+// ---------------------------------------------------------------- Hornet (coordenadas locais: lx pra direita, ly pra cima, 0 = pés, 1 ≈ topo da cabeça)
+function maskHead(i, lx, ly) {              // máscara da imagem; contorno e olhos escuros viram vazio
+  const v = (HEAD_Y + HEAD_H - ly) / HEAD_H, u = lx / (HEAD.gw * K / (2 * ROWS * S)) + 0.5;   // v: 0 = ponta dos chifres, 1 = queixo
+  if (v < 0 || v >= 1 || u < 0 || u >= 1) return false;
+  const k = Math.floor(v * HEAD.gh) * HEAD.gw + Math.floor(u * HEAD.gw);
+  if (!HEAD.inside[k]) return false;
+  if (HEAD.lum[k] < 0.75) blank(i);            // cinza do antisserrilhado também vira contorno: borda nítida
+  else put(i, HEAD.lum[k] * (0.6 + 0.24 * (1 - Math.abs(u - 0.5) * 2) + 0.06 * v), BONE);
+  return true;
+}
+
+function cloak(i, lx, ly, t) {
+  if (ly > 0.70 || ly < 0.18) return false;
+  const s = (0.70 - ly) / 0.44;              // 0 = gola, 1 = barra
+  const sway = WIND * 0.06 * s ** 1.6 * (1 + 0.3 * Math.sin(freq(3) * t - s * 3));
+  const hw = 0.06 + 0.06 * smooth(0, 0.15, s) + 0.16 * s ** 0.9;          // ombros arredondados, depois abre em capa
+  const left = sway - hw * 0.9 + 0.012 * Math.sin(freq(4) * t + ly * 14);
+  const right = sway + hw * 1.06 + WIND * 0.035 * s * s * Math.sin(freq(6) * t - ly * 20);
+  if (lx < left || lx > right) return false;
+  const v = lx * 9, tooth = Math.abs(v - Math.floor(v) - 0.5) * 2;        // barra rasgada em dentes
+  if (ly < 0.23 + (0.02 + 0.04 * hash(Math.floor(v), 3)) * tooth + 0.02 * Math.sin(lx * 9 - freq(5) * t)) return false;
+  const u = (lx - sway) / hw;
+  const fold = 0.5 + 0.5 * Math.cos(u * 10 + 2.2 * s * Math.sin(freq(2) * t) + 1.4 * s * Math.sin(freq(3) * t + u * 2));   // dobras que abrem em leque
+  const rim = 1 - smooth(0, 0.03, Math.min(lx - left, right - lx));       // contraluz dourada da cidade
+  put(i, (0.32 + 0.42 * fold) * (0.75 + 0.25 * s) + 0.2 * rim, mix(mix(RED_DARK, RED, 0.25 + 0.75 * fold), GOLD, 0.45 * rim));
+  return true;
+}
+
+function legs(i, lx, ly) {
+  if (ly < 0 || ly > 0.32) return false;
+  for (const sg of [-1, 1]) {
+    const x = sg * (0.045 + 0.03 * (1 - ly / 0.32)), d = sg * (lx - x);
+    if (Math.abs(d) < 0.017 || (ly < 0.03 && d > -0.015 && d < 0.06)) {
+      const rim = smooth(0, 0.017, d);
+      put(i, 0.3 + 0.2 * rim, mix(SHELL, GOLD, 0.25 * rim));
+      return true;
+    }
+  }
+  return false;
+}
+
+function hornet(t) {
+  hm.fill(0);
+  const b = 0.012 * (0.5 - 0.5 * Math.cos(freq(3) * t)), sw = 0.008 * Math.sin(freq(2) * t + 0.8);   // respira e balança; pés parados
+  const c0 = Math.max(1, colOf(-0.42 * S)), c1 = Math.min(COLS - 2, colOf(0.42 * S)), r0 = Math.max(1, rowOf(FY - 1.3 * S));
+  for (let r = r0; r < LR; r++) {
+    const ly0 = (FY - wyOf(r)) / S, ly = ly0 - b * smooth(0.2, 0.75, ly0), bend = sw * smooth(0.1, 1, ly0);
+    for (let c = c0; c <= c1; c++) {
+      const lx = wxOf(c) / S - bend, i = r * COLS + c;
+      if ((HEAD && maskHead(i, lx, ly)) || cloak(i, lx, ly, t) || legs(i, lx, ly)) hm[i] = 1;
+    }
+  }
+  for (let r = r0 - 1; r < LR; r++) for (let c = c0 - 1; c <= c1 + 1; c++) {   // contorno escuro: recorta a silhueta do fundo
+    const i = r * COLS + c;
+    if (!hm[i] && (hm[i - 1] || hm[i + 1] || hm[i - COLS] || hm[i + COLS])) blank(i);
+  }
+  const hx = 0.21, hy = 0.40, tx = 0.47, ty = 0.03;                        // agulha saindo do manto
+  line(hx * S, FY - hy * S, tx * S, FY - ty * S, (i, a, g) => put(i, 0.85 - 0.2 * a, STEEL, g, 0.3));
+  const px = hx - (tx - hx) * 0.06, py = hy - (ty - hy) * 0.06;            // fio de seda preso no cabo, ondulando ao vento
+  let ax = px * S, ay = FY - py * S;
+  for (let k = 1; k <= 48; k++) {
+    const s = k / 48, ph = TAU * 1.1 * s - freq(5) * t;
+    const x = (px + s * 0.95 + 0.03 * s * Math.cos(ph)) * S, y = FY - (py + 0.12 * s + 0.08 * WIND * s * Math.sin(ph)) * S;
+    line(ax, ay, x, y, (i, a, g) => put(i, 0.75 - 0.4 * s, SILK, g, 0.45 * (1 - s)));
+    ax = x; ay = y;
+  }
+  for (let k = 0; k < 16; k++) {                                           // farrapos do manto soltando com o vento
+    const p = ((t / LOOP) * 3 + k / 16) % 1;
+    const x = (0.17 + 0.06 * hash(k, 51) + p * (0.45 + 0.3 * hash(k, 53))) * S;
+    const y = FY - (0.26 + 0.3 * hash(k, 52) + p * (0.06 + 0.1 * hash(k, 54)) + 0.025 * Math.sin(TAU * p * 2 + k)) * S;
+    const c = colOf(x), r = rowOf(y), l = 0.62 * (1 - p) * smooth(0, 0.1, p);
+    if (c < 0 || c >= COLS || r < 0 || r >= LR || l < 0.12 || hm[r * COLS + c]) continue;
+    put(r * COLS + c, l, mix(RED, RED_DARK, p), C(p < 0.35 ? "%" : p < 0.7 ? "+" : "."));
+  }
+}
+
+// ================================================================ quadro
+function draw() {
+  const W = view.width, H = view.height, d = glowImg.data;
+  d.fill(0);                                                               // brilho: só o que emite luz, borrado e somado por baixo do texto
+  px32.fill(0);
+  for (let i = 0; i < N; i++) {
+    const e = emis[i], j = i * 3, ri = rayI[i], rv = Math.min(1, RAYS[0][ri] + (RAYS[1][ri] - RAYS[0][ri]) * rayW) * rayF[i];
+    if (e > 0 || rv > 0.01) {                                              // raios entram só no brilho borrado: viram fachos de luz na névoa
+      const q = i * 4;
+      d[q] = (rgb[j] * e + RAY[0] * rv) * 255; d[q + 1] = (rgb[j + 1] * e + RAY[1] * rv) * 255; d[q + 2] = (rgb[j + 2] * e + RAY[2] * rv) * 255; d[q + 3] = 255;
+    }
+    const l = lum[i] * (1 + rv), code = gl[i] || RAMPC[Math.min(9, l * 10 | 0)];
+    if (code === 32 || (!gl[i] && l < 0.1)) continue;
+    const k = (0.5 + 0.85 * l) * 255, m = MASK[code];
+    const col = (Math.min(255, rgb[j + 2] * k) << 16) | (Math.min(255, rgb[j + 1] * k) << 8) | Math.min(255, rgb[j] * k);   // ABGR (little-endian)
+    for (let y = 0, o = ((i / COLS) | 0) * CH * W + (i % COLS) * CW, mi = 0; y < CH; y++, o += W) for (let x = 0; x < CW; x++, mi++) {
+      const v = m[mi];
+      if (v) px32[o + x] = (v << 24) | col;
+    }
+  }
+  actx.putImageData(frameImg, 0, 0);
+  g1x.putImageData(glowImg, 0, 0);
+  g2x.clearRect(0, 0, COLS, ROWS); g2x.drawImage(g1, 0, 0);
+  ctx.fillStyle = BG; ctx.fillRect(0, 0, W, H);
+  ctx.globalCompositeOperation = "lighter"; ctx.imageSmoothingEnabled = true;
+  ctx.drawImage(g2, 0, 0, W, H);
+  ctx.globalCompositeOperation = "source-over";
+  ctx.drawImage(ascii, 0, 0);
+}
+
+function frame(t) {
+  lastT = t;
+  rayW = 0.5 + 0.5 * Math.sin(freq(1) * t);
+  par += (parT - par) * 0.06;
+  for (let k = 0; k < 5; k++) sh[k] = Math.round(par * PAR[k]);
+  lum.fill(0); gl.fill(0); emis.fill(0); lay.fill(-1);
+  for (let k = 0; k < 5; k++) {                                            // empilha as camadas, cada uma com seu deslocamento
+    const B = L[k];
+    for (let r = 0; r < ROWS; r++) for (let c = 0, i = r * COLS, j = r * LW + M + sh[k]; c < COLS; c++, i++, j++) {
+      if (!B.has[j]) continue;
+      lum[i] = B.lum[j]; gl[i] = B.gl[j]; emis[i] = B.emis[j]; lay[i] = k;
+      rgb[i * 3] = B.rgb[j * 3]; rgb[i * 3 + 1] = B.rgb[j * 3 + 1]; rgb[i * 3 + 2] = B.rgb[j * 3 + 2];
+    }
+  }
+  const age = ringAge(t), flash = age >= 0 ? 0.6 * Math.exp(-age * 1.5) : 0;   // a badalada acende todas as janelas
+  for (const W of wins) {
+    const c = (W.j % LW) - M - sh[W.k];
+    if (c < 0 || c >= COLS) continue;
+    const i = ((W.j / LW) | 0) * COLS + c;
+    if (lay[i] !== W.k) continue;
+    const f = 0.78 + 0.22 * Math.sin(freq(W.n) * t + W.ph * 40) + flash;
+    lum[i] = W.l * f; emis[i] = W.e * f;
+  }
+  bell(t); waves(t); walk(t); fog(t); silk(t); drift(t); burst(t);
+  for (const P of ledge) put(P.i, P.l, P.col, P.ch, P.e || 0);
+  hornet(t);
+  draw();
+}
+
+// ================================================================ badalada (som sintetizado, só quando alguém toca o sino)
+let ac = null;
+function strike() {
+  const AC = window.AudioContext || window.webkitAudioContext;
+  if (!AC) return;
+  ac ??= new AC();
+  const now = ac.currentTime;
+  [0.5, 1, 1.2, 1.5, 2, 2.5, 3, 4.2].forEach((ratio, k) => {              // parciais de sino (inarmônicos), os agudos somem antes
+    const o = ac.createOscillator(), g = ac.createGain(), end = now + 5 / (1 + k * 0.35);
+    o.frequency.value = 196 * ratio;
+    g.gain.setValueAtTime(0.0001, now);
+    g.gain.exponentialRampToValueAtTime(0.13 / (1 + k * 0.5), now + 0.008);
+    g.gain.exponentialRampToValueAtTime(0.0001, end);
+    o.connect(g).connect(ac.destination); o.start(now); o.stop(end);
+  });
+}
+
+// ================================================================ interação
+let motionAsked = false;
+function interact() {
+  hitT = lastT;
+  strike();
+  const D = window.DeviceOrientationEvent;                                 // iPhone só libera o giroscópio depois de um toque
+  if (!motionAsked && D && typeof D.requestPermission === "function") { motionAsked = true; D.requestPermission().catch(() => {}); }
+}
+view.addEventListener("pointerdown", interact);
+addEventListener("keydown", (e) => { if ((e.key === " " || e.key === "Enter") && e.target === document.body) { e.preventDefault(); interact(); } });
+addEventListener("pointermove", (e) => { if (e.pointerType === "mouse") parT = (e.clientX / innerWidth - 0.5) * 2; });
+addEventListener("deviceorientation", (e) => { if (e.gamma !== null) parT = clamp(e.gamma / 25, -1, 1); });
+
+const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+function rebuild() { build(); if (still) frame(4); }
+const headImg = new Image();
+headImg.onload = headImg.onerror = () => {   // só começa com a máscara pronta (é embutida: leva milissegundos); decode() trava com a aba em segundo plano
+  if (headImg.naturalWidth) HEAD = sampleHead(headImg);
+  rebuild();
+  if (still) return;
+  const t0 = performance.now();
+  let last = -1e9;
+  const loop = (now) => { requestAnimationFrame(loop); if (now - last < 1000 / FPS - 3) return; last = now; frame((now - t0) / 1000); };
+  requestAnimationFrame(loop);
+};
+headImg.src = HEAD_SRC;
+let rt;
+addEventListener("resize", () => { clearTimeout(rt); rt = setTimeout(rebuild, 150); });
+</script>
+</body>
+</html>
